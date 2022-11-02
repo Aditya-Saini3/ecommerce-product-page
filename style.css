@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 10%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid rgba(236, 236, 236, 1);
+}
+
+.nav {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo {
+    height: 20px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    width: 65%;
+    justify-content: space-between;
+    color: grey;
+}
+
+.menu-list li a {
+    padding: 38px 0;
+}
+
+.menu-list li a:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+    border-bottom: 4px solid red;
+}
+
+.header__right-section {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-image {
+    cursor: pointer;
+}
+
+.cart-modal {
+    position: fixed;
+    left: 800px;
+    top: 100px;
+    height: 200px;
+    width: 350px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Kumbh Sans", sans-serif;
+    box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart-modal_description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-thumbnail-img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    width: 15px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    height: 30%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #ff5900;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 50px;
+}
+
+.profile-pic:hover {
+    outline: 2px solid #ff5900;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+.product-section {
+    display: flex;
+    margin: 40px 40px 0px 40px;
+}
+
+.big-pic {
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-pics {
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-text-container {
+    padding: 50px 70px 0px 70px;
+}
+
+.company-name {
+    color: hsl(21deg 100% 50%);
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+}
+
+.product-description {
+    color: grey;
+    margin: 20px 0;
+}
+
+.product-price_current {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    align-items: baseline;
+}
+
+.product-price_discount {
+    background-color: hsl(21deg 100% 50% / 26%);
+    font-size: 1rem;
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: #ff5900;
+}
+
+.product-price_previous {
+    color: grey;
+    text-decoration: line-through;
+    margin-bottom: 40px;
+}
+
+.product-numbers_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus-minus_container {
+    display: flex;
+    align-items: center;
+    background-color: #80808040;
+    justify-content: space-around;
+    width: 30%;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.plus, .minus {
+    cursor: pointer;
+}
+
+.cart {
+    fill: white;
+}
+
+.add-btn {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ff5900;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.attribution {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+.attribution a {
+    color: #ff5900;
+    font-weight: 700;
+}

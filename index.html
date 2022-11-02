@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cart-modal" class="cart-modal">
+    <div class="content">
+      <h3 class="cart-modal_title">Cart</h3>
+    <hr>
+    <div class="cart-modal_description">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Product Image" class="product-thumbnail-img"/>
+        <div class="c-m-d_text">
+          <p>Fall Limited Edition Sneakers</p>
+          <p><span>$125</span> X <span>3</span><span> $375</span></p>
+        </div>
+        <img src="./images/icon-delete.svg" alt="delete" class="delete-btn"/>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  <header class="header-section">
+    <nav class="nav">
+      <img src="./images/logo.svg" alt="Sneakers logo" class="logo">
+      <ul class="menu-list">
+        <li><a>Collections</a></li>
+        <li><a>Men</a></li>
+        <li><a>Women</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__right-section">
+      <img src="./images/icon-cart.svg" alt="cart logo" class="cart-image" id="cart-btn">
+      <img src="./images/IMG_20220831_134801.png" alt="Profile pic" class="profile-pic">
+    </div>
+  </header>
+  <main class="product-section">
+    <div class="images-container">
+      <img src="./images/image-product-1.jpg" alt="shoes pic1"class="big-pic">
+      <div class="thumbnail-images">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1" class="small-pics">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2" class="small-pics">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3" class="small-pics">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4" class="small-pics">
+      </div>
+    </div>
+    <div class="product-text-container">
+      <h3 class="company-name">Sneaker Company</h3>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="product-price_current">
+        <p>$125.00</p>
+        <span class="product-price_discount">50%</span>
+      </div>
+      <div class="product-price_previous">
+        $250.00
+      </div>
+      <div class="product-numbers_container">
+        <div class="plus-minus_container">
+          <img src="./images/icon-minus.svg" alt="minus" class="minus"> 
+          0 
+          <img src="./images/icon-plus.svg" alt="plus" class="plus">
+        </div>
+        <button class="add-btn"><img src="./images/icon-cart.svg" alt="cart image" class="cart"> Add to cart</button>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by: - <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by: - <a href="https://adiobs.netlify.app/" target="_blank">Aditya Saini</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
